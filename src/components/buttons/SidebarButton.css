@@ -12,9 +12,7 @@
 
 .sidebar-button > span {
   display: block;
-  width: 20px;
   height: 3px;
-  left: 5px;
   background-color: white;
 }
 
@@ -22,17 +20,23 @@
   position: relative;
   top: -4px;
   transition: transform 0.5s, top 0.5s, left 0.5s;
+  width: 20px;
+  left: 5px;
 }
 
 .second-span-in-sidebar-button {
   position: relative;
   transition: transform 0.5s, width 0.5s, left 0.5s;
+  width: 20px;
+  left: 5px;
 }
 
 .third-span-in-sidebar-button {
   position: relative;
   bottom: -4px;
   transition: transform 0.5s, bottom 0.5s, left 0.5s;
+  width: 20px;
+  left: 5px;
 }
 
 .sidebar-button:hover > .first-span-in-sidebar-button {
@@ -53,6 +57,109 @@
   left: 3px;
 }
 
-.sidebar-button:active > span {
-  background-color: gray;
+.false {
+  position: absolute;
+}
+
+.first-enter {
+  transform: rotate(-45deg);
+  left: 2px;
+  top: 10px;
+  width: 20px;
+}
+
+.first-enter-active {
+  transform: rotate(-45deg);
+  left: 2px;
+  top: 16px;
+  width: 26px;
+  transition: transform 0.5s, left 0.5s, top 0.5s, width 0.5s;
+}
+
+.first-enter-done {
+  transform: rotate(-45deg);
+  left: 2px;
+  top: 16px;
+  width: 26px;
+}
+
+.first-exit {
+  transform: rotate(-45deg);
+  left: 2px;
+  top: 16px;
+  width: 26px;
+}
+
+:first-exit-active {
+  transform: rotate(-45deg);
+  left: 2px;
+  top: 10px;
+  width: 20px;
+  transition: transform 0.5s, left 0.5s, top 0.5s, width 0.5s;
+}
+
+.second-enter {
+  transform: rotate(90deg);
+  left: 7px;
+  width: 25px;
+  opacity: 1;
+}
+.second-enter-active {
+  transform: rotate(90deg);
+  left: 7px;
+  width: 25px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.second-enter-done {
+  transform: rotate(90deg);
+  left: 7px;
+  width: 25px;
+  opacity: 0;
+}
+.second-exit {
+  transform: rotate(90deg);
+  left: 7px;
+  width: 25px;
+  opacity: 0;
+}
+.second-exit-active {
+  transform: rotate(90deg);
+  left: 7px;
+  width: 25px;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.third-enter {
+  transform: rotate(45deg);
+  bottom: 42px;
+  left: 3px;
+  width: 20px;
+}
+.third-enter-active {
+  transform: rotate(45deg);
+  bottom: 49px;
+  left: 3px;
+  width: 25px;
+  transition: bottom 0.5s, width 0.5s;
+}
+.third-enter-done {
+  transform: rotate(45deg);
+  bottom: 49px;
+  left: 3px;
+  width: 25px;
+}
+.third-exit {
+  transform: rotate(45deg);
+  bottom: 49px;
+  left: 3px;
+  width: 25px;
+}
+.third-exit-active {
+  transform: rotate(45deg);
+  bottom: 42px;
+  left: 3px;
+  width: 20px;
+  transition: bottom 0.5s, width 0.5s;
 }

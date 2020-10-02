@@ -16,23 +16,19 @@ export default class SideBar extends React.Component {
   }
 
   render() {
-    let barStateClass
-
-    if (this.state.isSideBarOpen) {
-      barStateClass = 'opened'
-    } else {
-      barStateClass = 'closed'
-    }
-
     return (
       <div>
-				<CSSTransition in={this.state.isSideBarOpen}
-					classNames="sideBar"
-					timeout={1000}
-				>
+        <CSSTransition
+          in={this.state.isSideBarOpen}
+          classNames="sideBar"
+          timeout={1000}
+        >
           <div className="sideBar"></div>
         </CSSTransition>
-        <FloatButtonGroup onclick={this.changeOpenState.bind(this)} />
+        <FloatButtonGroup
+          isSideBarOpen={this.state.isSideBarOpen}
+          onclick={this.changeOpenState.bind(this)}
+        />
       </div>
     )
   }
