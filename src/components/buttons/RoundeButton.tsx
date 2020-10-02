@@ -3,17 +3,18 @@ import './RoundeButton.css'
 
 export interface Props {
   text: string
-  onclick: (event: any, params: number | null) => void
-  onclickParams: number | null
+  href: string
 }
 
 export default function RoundeButton(props: Props) {
   return (
-    <button
-      className='rounde-button '
-      onClick={e => props.onclick(e, props.onclickParams)}
+    <a
+      className="rounde-button"
+      href={props.href}
+      rel="noopener noreferrer"
+      target="_blank"
     >
       {props.text}
-    </button>
+    </a>
   )
 }
