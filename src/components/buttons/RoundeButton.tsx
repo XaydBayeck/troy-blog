@@ -1,14 +1,19 @@
-import React from "react";
+import React from 'react'
+import './RoundeButton.css'
 
 export interface Props {
-  text: String;
-  onclick: Function;
+  text: string
+  onclick: (event: any, params: number | null) => void
+  onclickParams: number | null
 }
 
 export default function RoundeButton(props: Props) {
   return (
-    <div className="rounde-button">
-      <button>{props.text}</button>
-    </div>
-  );
+    <button
+      className='rounde-button '
+      onClick={e => props.onclick(e, props.onclickParams)}
+    >
+      {props.text}
+    </button>
+  )
 }
