@@ -46,3 +46,7 @@
   display: inline;
   top: 4.5px;
 }
+
+.to-top-button:active > * {
+  color: gray;
+}
