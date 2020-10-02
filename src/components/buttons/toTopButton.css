@@ -1,0 +1,48 @@
+.to-top-button {
+  margin: 0%;
+  padding: 0;
+  background-color: black;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+}
+
+.roll > span {
+  position: relative;
+  transition: display 1s;
+  font-weight: 800;
+  transition: display 0.5s;
+}
+
+.to-top-symbol {
+  display: none;
+  top: 15px;
+}
+
+.to-top-text {
+  bottom: -5px;
+  font-size: 90%;
+}
+
+.roll {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.5s;
+}
+
+.roll:hover {
+  transform: rotate(-90deg);
+}
+
+.roll:hover > .to-top-text {
+  display: none;
+}
+
+.roll:hover > .to-top-symbol {
+  display: inline;
+  top: 4.5px;
+}
