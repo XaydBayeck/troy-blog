@@ -1,0 +1,37 @@
+.sideBar {
+  background: #262a30;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  display: block;
+}
+
+.sideBar-enter {
+  width: 0px;
+  opacity: 0;
+  transition: opacity 1s, display 1s, width 1s;
+}
+
+.sideBar-enter-active {
+  width: 320px;
+  opacity: 1;
+  transition: width 1s, opacity 1s, display 1s;
+}
+
+.sideBar-enter-done {
+  width: 320px;
+  opacity: 1;
+  transition: width 1s, opacity 1s, display 1s;
+}
+
+.sideBar-exit {
+  width: 320px;
+  opacity: 1;
+  transition: opacity 1s, display 1s, width 1s;
+}
+
+.sideBar-exit-active {
+  width: 0px;
+  opacity: 0;
+  transition: opacity 1s, display 1s, width 1s;
+}

@@ -1,26 +1,18 @@
 import * as React from 'react'
+import { MouseEvent } from 'react'
 import './floatButtonGroup.css'
 import SidebarButton from '../buttons/SidebarButton'
 import ToTopButton from '../buttons/toTopButton'
 
-export default class FloatButtonGroup extends React.Component {
-  state = {
-    isSideBarOpen: false,
-  }
+export interface Props{
+	onclick: (event:MouseEvent<HTMLButtonElement>)=>void
+}
 
-  changeSideBar = () => {
-    this.setState({
-      isSideBarOpen: !this.state.isSideBarOpen,
-    })
-    console.log('is sidebar open? ' + this.state.isSideBarOpen)
-  }
-
-  render() {
+export default function FloatButtonGroup(props:Props) {
     return (
       <div className="float-button-group">
-        <SidebarButton onclick={this.changeSideBar.bind(this)} />
+        <SidebarButton onclick={props.onclick} />
         <ToTopButton />
       </div>
     )
-  }
 }
