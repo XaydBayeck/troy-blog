@@ -6,7 +6,7 @@ export default function MainNav() {
   return (
     <div className="mainNav">
       <nav className="navInMainNav">
-        <a href="#" className="navLink home">
+        <a href="#" className="navLink navHome">
           <i className="nav-icon fa fa-home"></i>
           <div className="navName">Home</div>
           <span className="hoverLine" />
