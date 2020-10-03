@@ -1,0 +1,60 @@
+.navLink {
+  text-decoration: none;
+  color: #262a30;
+  width: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.navInMainNav {
+  display: flex;
+  flex-direction: row;
+}
+
+.hoverLine {
+  display: inline-block;
+  border-top: 2px solid #262a30;
+  height: 2px;
+  width: 0px;
+  transition: width 0.5s;
+}
+
+.navLink:hover > .hoverLine {
+  width: 65px;
+}
+
+.navLink:active {
+  opacity: 0;
+}
+
+.onSelect-enter {
+  width: 65px;
+  border-width: 0px 0px 0px 0px;
+  border-color: #262a30;
+}
+.onSelect-enter-active {
+  width: 65px;
+  border-width: 2px 2px 0px 2px;
+  border-color: #262a30;
+  transition: width 1s, border-width 1s;
+}
+.onSelect-enter-done {
+  width: 65px;
+  border-width: 2px 2px 0px 2px;
+  border-color: #262a30;
+}
+
+.onSelect-exit {
+  width: 65px;
+  border-width: 2px 2px 0px 2px;
+  border-color: #262a30;
+}
+.onSelect-exit-active {
+  width: 65px;
+  border-width: 0px 0px 0px 0px;
+  border-color: #262a30;
+  transition: width 1s, border-width 1s;
+}
