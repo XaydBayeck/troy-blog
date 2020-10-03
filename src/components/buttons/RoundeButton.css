@@ -7,6 +7,7 @@
   border: 3px solid darkorange;
   cursor: pointer;
   text-decoration: none;
+  line-height: 1.8;
 }
 
 .rounde-button:hover {

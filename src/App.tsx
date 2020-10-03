@@ -6,7 +6,6 @@ import SideBar from './components/sideBar/sideBar'
 function App() {
   return (
     <div className="App">
-      <RoundeButton text="Bili Hub" href="https://www.bilibili.com" />
       <SideBar />
     </div>
   )

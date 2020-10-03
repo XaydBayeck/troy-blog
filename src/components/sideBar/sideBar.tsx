@@ -3,6 +3,7 @@ import { CSSTransition } from 'react-transition-group'
 import './sideBar.css'
 import FloatButtonGroup from '../floatButtonGroup/floatButtonGroup'
 import Showcase from '../showcase/showcase'
+import RoundeButton from '../buttons/RoundeButton'
 
 export default class SideBar extends React.Component {
   state = {
@@ -30,6 +31,10 @@ export default class SideBar extends React.Component {
               userName="Sid"
               description="I'm gitman!"
             />
+            <div className="main-link">
+							{/* TODO: has ability to config the main link  <03-10-20, David Chen> */}
+              <RoundeButton text="BiliHub" href="https://www.bilibili.com" />
+            </div>
           </div>
         </CSSTransition>
         <FloatButtonGroup
