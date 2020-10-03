@@ -3,11 +3,17 @@ import { CSSTransition } from 'react-transition-group'
 import './sideBar.css'
 import FloatButtonGroup from '../floatButtonGroup/floatButtonGroup'
 import Showcase from '../showcase/showcase'
+import BaseInfor from '../baseInfor/baseInfor'
 import RoundeButton from '../buttons/RoundeButton'
 
 export default class SideBar extends React.Component {
   state = {
     isSideBarOpen: false,
+		baseInfor:{
+			articleNum:0,
+			categoryNum:0,
+			tagNum:0,
+		}
   }
 
   changeOpenState = () => {
@@ -31,6 +37,7 @@ export default class SideBar extends React.Component {
               userName="Sid"
               description="I'm gitman!"
             />
+						<BaseInfor {...this.state.baseInfor} />
             <div className="main-link">
 							{/* TODO: has ability to config the main link  <03-10-20, David Chen> */}
               <RoundeButton text="BiliHub" href="https://www.bilibili.com" />

@@ -1,0 +1,27 @@
+.baseInfor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.infor-cell {
+  display: flex;
+  flex-direction: column;
+  color: teal;
+  margin: 2px 6px 2px 6px;
+  width: 65px;
+  height: 60px;
+}
+
+.infor-cell > .number {
+  font-size: 200%;
+}
+.infor-cell > .name {
+  font-size: 100%;
+}
+
+.baseInfor > .separate {
+  border-right: 2px solid teal;
+  height: 100%;
+}
