@@ -2,6 +2,7 @@ import * as React from 'react'
 import { CSSTransition } from 'react-transition-group'
 import './sideBar.css'
 import FloatButtonGroup from '../floatButtonGroup/floatButtonGroup'
+import Showcase from '../showcase/showcase'
 
 export default class SideBar extends React.Component {
   state = {
@@ -23,7 +24,13 @@ export default class SideBar extends React.Component {
           classNames="sideBar"
           timeout={1000}
         >
-          <div className="sideBar"></div>
+          <div className="sideBar">
+            <Showcase
+              headshot="/gundam.jpg"
+              userName="Sid"
+              description="I'm gitman!"
+            />
+          </div>
         </CSSTransition>
         <FloatButtonGroup
           isSideBarOpen={this.state.isSideBarOpen}

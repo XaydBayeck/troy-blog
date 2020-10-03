@@ -4,6 +4,7 @@
   right: 0;
   height: 100%;
   display: block;
+  width: 0;
 }
 
 .sideBar-enter {

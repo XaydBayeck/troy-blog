@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <RoundeButton text="Bili Hub" href="https://www.bilibili.com" />
-				<SideBar />
+      <SideBar />
     </div>
   )
 }
