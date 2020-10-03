@@ -1,0 +1,105 @@
+.articleCard {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: darkslategray;
+}
+
+.article-infor {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.first-infor {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 3px;
+  border-bottom: 1px solid gray;
+}
+
+.article-datetime {
+  margin-right: 5px;
+}
+
+.first-infor > span {
+  border-left: 1px solid gray;
+}
+
+.article-category {
+  margin-left: 5px;
+}
+
+.article-tags {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.article-block {
+  text-decoration: none;
+  color: white;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+}
+
+.article-icon {
+  margin-right: 2px;
+}
+
+.article-block > .block {
+  background-color: gray;
+  border-radius: 10%/20%;
+  padding: 0px 3px 2px;
+}
+
+.article-part {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.readMore {
+  border: none;
+  font-size: 20px;
+  color: lightgray;
+  background-color: #262a30;
+  padding: 2px 20px 6px;
+  transition: color 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.readMore > span {
+  display: inline-block;
+  width: 0px;
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+  top: 6px;
+  color: lightgray;
+  transition: color 0.5s, width 0.5s, opacity 0.5s;
+}
+
+.readMore:hover {
+  color: white;
+}
+
+.readMore:hover > span {
+  width: 20px;
+  opacity: 1;
+  color: white;
+}
+
+.separat {
+  margin-top: 50px;
+  width: 40%;
+  border-top: 2px solid gray;
+}
