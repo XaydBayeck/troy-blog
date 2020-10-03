@@ -5,6 +5,7 @@ import FloatButtonGroup from '../floatButtonGroup/floatButtonGroup'
 import Showcase from '../showcase/showcase'
 import BaseInfor from '../baseInfor/baseInfor'
 import RoundeButton from '../buttons/RoundeButton'
+import LinkSheet from '../linksheet/linksheet'
 
 export default class SideBar extends React.Component {
   state = {
@@ -13,7 +14,21 @@ export default class SideBar extends React.Component {
 			articleNum:0,
 			categoryNum:0,
 			tagNum:0,
-		}
+		},
+		linksheet:[
+			{
+				linkName:"bilibli",
+				linkHref:"https://www.bilibili.com"
+			},
+			{
+				linkName:"github",
+				linkHref:"https://github.com"
+			},
+			{
+				linkName:"codeberg",
+				linkHref:"https://codeberg.com"
+			}
+		]
   }
 
   changeOpenState = () => {
@@ -42,6 +57,7 @@ export default class SideBar extends React.Component {
 							{/* TODO: has ability to config the main link  <03-10-20, David Chen> */}
               <RoundeButton text="BiliHub" href="https://www.bilibili.com" />
             </div>
+						<LinkSheet links={this.state.linksheet}/>
           </div>
         </CSSTransition>
         <FloatButtonGroup
