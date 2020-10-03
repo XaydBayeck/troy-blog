@@ -46,7 +46,7 @@ export default function ArticleCard({
         </div>
       </div>
       <div className="article-part">{part}</div>
-				<a className="readMore" href={"#/article/"+{title}}>
+      <a className="readMore" href={'#/article/' + title}>
         Read More <span>>></span>
       </a>
       <span className="separat" />
