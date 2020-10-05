@@ -53,7 +53,7 @@ export default class SideBar extends React.Component {
           >
             <div className="sideBar">
               <Showcase
-                headshot="/gundam.jpg"
+								headshot="/image/gundam.jpg"
                 userName="Sid"
                 description="I'm gitman!"
               />
