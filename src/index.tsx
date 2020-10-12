@@ -8,6 +8,7 @@ import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
 import Home from './components/home/Home'
 import About from './components/about/about'
+import MdFromUrl from './components/markdown/markdownUrl'
 
 /* TODO: design a profession Router component to control app router and routing animations  <04-10-20, David Chen> */
 ReactDOM.render(
@@ -21,6 +22,9 @@ ReactDOM.render(
           <Route path="/about">
             <About />
           </Route>
+						<Route path="/markdown">
+							<MdFromUrl url="/markdown/test.md"/>
+							</Route>
           <Route path="/">
             <Home />
           </Route>

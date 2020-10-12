@@ -1,6 +1,8 @@
 import * as React from 'react'
 import Md from 'markdown-it'
 import stripIndent from 'strip-indent'
+import 'highlight.js/styles/atom-one-dark.css'
+import './purple.css'
 
 interface Props {
   options?: Md.Options
@@ -8,6 +10,10 @@ interface Props {
 }
 
 export default class Markdown extends React.Component<Props, { md: Md }> {
+  constructor(props: Props) {
+		super(props)
+		this.state={md: new Md('default', props.options)};
+  }
 
   componentWillUpdate(nextProps: Props) {
     if (nextProps.options != this.props.options) {
@@ -46,7 +52,7 @@ export default class Markdown extends React.Component<Props, { md: Md }> {
     }
   }
 
-  render() {
-    return <div className="markdown">{this.content()}</div>
+	render() {
+		return <div className="markdown" style={{textAlign:"initial"}}>{this.content()}</div>
   }
 }

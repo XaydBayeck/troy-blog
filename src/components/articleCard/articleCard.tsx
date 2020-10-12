@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Link } from 'react-router-dom'
 import './articleCard.css'
 
 export interface Props {
@@ -46,9 +47,9 @@ export default function ArticleCard({
         </div>
       </div>
       <div className="article-part">{part}</div>
-      <a className="readMore" href={'#/article/' + title}>
+      <Link to={'/markdown/' + title} className="readMore">
         Read More <span>>></span>
-      </a>
+      </Link>
       <span className="separat" />
     </div>
   )
