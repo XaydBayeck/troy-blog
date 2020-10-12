@@ -2,7 +2,7 @@ import * as React from 'react'
 import Md from 'markdown-it'
 import stripIndent from 'strip-indent'
 import 'highlight.js/styles/atom-one-dark.css'
-import './purple.css'
+import './markdown4.css'
 
 interface Props {
   options?: Md.Options
